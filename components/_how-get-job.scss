@@ -1,0 +1,181 @@
+$main-color: #1967d2;
+$dark-blue: #002860;
+$dark-text: #17171d;
+
+// start how_get_job
+.how_get_job {
+  padding: 60px 0;
+
+  .line {
+    display: flex;
+    align-items: center;
+
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      .subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        color: $main-color;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        color: gray;
+        font-size: 18px;
+      }
+
+      .bottom_info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icon {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: $main-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            font-size: 34px;
+            color: white;
+          }
+        }
+
+        .text {
+          h4 {
+            margin-bottom: 0;
+            font-size: 20px;
+          }
+
+          span {
+            color: gray;
+          }
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+
+      .mini_box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 250px;
+        position: absolute;
+        top: 20px;
+        animation: bounce 1s linear infinite alternate-reverse both;
+
+        img {
+          width: 35px;
+          border-radius: 50%;
+        }
+
+        .text {
+          h5 {
+            margin-bottom: 0px;
+            font-size: 14px;
+          }
+
+          span {
+            margin-bottom: 0px;
+            font-size: 12px;
+            color: #be8ece;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .how_get_job {
+    padding: 30px 0;
+    .line {
+      flex-direction: column;
+      gap: 25px;
+      text-align: center;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        .subtitle {
+          font-size: 17px;
+        }
+
+        .title {
+          font-size: 23px;
+          font-weight: 600;
+        }
+
+        .desc {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+
+        .bottom_info {
+          justify-content: center;
+          margin-top: 15px;
+          flex-direction: column;
+          gap: 10px;
+
+          .icon {
+            width: 40px;
+            height: 40px;
+
+            i {
+              font-size: 24px;
+            }
+          }
+
+          .text {
+            h4 {
+              font-size: 18px;
+            }
+
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end how_get_job
+
+// animation
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}

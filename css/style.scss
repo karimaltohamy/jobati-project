@@ -1,0 +1,42 @@
+@use "../components/header";
+@use "../components/hero";
+@use "../components/about";
+@use "../components/browse-category";
+@use "../components/how-get-job";
+@use "../components/our-blog";
+@use "../components/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
