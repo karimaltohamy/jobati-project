@@ -30,6 +30,11 @@ header .container .links .link {
   font-weight: 500;
   font-size: 17px;
   color: #2f2f2f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .container .links .link:hover {
+  color: #1967d2 !important;
 }
 header .container .header_info {
   display: -webkit-box;
@@ -53,21 +58,25 @@ header .container .header_info .btns {
           align-items: center;
   gap: 15px;
 }
-header .container .header_info .btns button {
+header .container .header_info .btns button,
+header .container .header_info .btns a {
   padding: 8px 20px;
   border: 8px;
   font-weight: 500;
   border-radius: 8px;
 }
-header .container .header_info .btns button.btn_info {
+header .container .header_info .btns button.btn_info,
+header .container .header_info .btns a.btn_info {
   background-color: #e0eeff;
   color: #1967d2;
 }
-header .container .header_info .btns button.btn_main {
+header .container .header_info .btns button.btn_main,
+header .container .header_info .btns a.btn_main {
   background-color: #1967d2;
-  color: white;
+  color: white !important;
 }
-header .container .header_info .btns button.icon_menu {
+header .container .header_info .btns button.icon_menu,
+header .container .header_info .btns a.icon_menu {
   display: none;
 }
 
@@ -90,20 +99,25 @@ header .container .header_info .btns button.icon_menu {
   header .container .header_info .search_icon i {
     font-size: 17px;
   }
-  header .container .header_info .btns button {
+  header .container .header_info .btns button,
+header .container .header_info .btns a {
     padding: 4px 10px;
   }
-  header .container .header_info .btns button span {
+  header .container .header_info .btns button span,
+header .container .header_info .btns a span {
     display: none;
   }
-  header .container .header_info .btns button i {
+  header .container .header_info .btns button i,
+header .container .header_info .btns a i {
     font-size: 15px;
   }
-  header .container .header_info .btns button.icon_menu {
+  header .container .header_info .btns button.icon_menu,
+header .container .header_info .btns a.icon_menu {
     display: block;
     cursor: pointer;
   }
-  header .container .header_info .btns button.icon_menu i {
+  header .container .header_info .btns button.icon_menu i,
+header .container .header_info .btns a.icon_menu i {
     font-size: 20px;
     color: #1967d2;
   }
@@ -1315,6 +1329,205 @@ footer .footer_bottom .social_media a i {
     gap: 10px;
   }
 }
+.scound_head {
+  background-color: #e9f1ff;
+  height: 200px;
+}
+.scound_head .content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.scound_head .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #002860;
+  margin-bottom: 10px;
+}
+.scound_head .content p {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.scound_head .content p a,
+.scound_head .content p span {
+  font-size: 20px;
+  color: gray !important;
+}
+.scound_head .content p a {
+  position: relative;
+}
+.scound_head .content p a::after {
+  content: "";
+  position: absolute;
+  top: 57%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #1967d2;
+}
+.scound_head .content p span {
+  color: #1967d2 !important;
+}
+
+.login_form {
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.login_form form {
+  max-width: 500px;
+  width: 100%;
+}
+.login_form form h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.login_form form .input_form {
+  margin-bottom: 20px;
+}
+.login_form form .input_form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.login_form form .input_form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: #e9f1ff;
+}
+.login_form form .btn_form {
+  width: 100%;
+  padding: 10px;
+  background-color: #1967d2;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.login_form form span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(219, 219, 219);
+  margin: 30px 0;
+  position: relative;
+}
+.login_form form span::after {
+  content: "or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -59%);
+          transform: translate(-50%, -59%);
+  background-color: white;
+  padding: 5px;
+  color: rgb(219, 219, 219);
+  font-size: 20px;
+}
+.login_form form .btn_facebook,
+.login_form form .btn_google {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  font-weight: 500;
+  color: #424242;
+  margin-bottom: 10px;
+}
+.login_form form .btn_facebook i,
+.login_form form .btn_google i {
+  font-size: 20px;
+}
+.login_form form .btn_facebook i.facebook,
+.login_form form .btn_google i.facebook {
+  color: #4267b2;
+}
+.login_form form .btn_facebook i.google,
+.login_form form .btn_google i.google {
+  color: #db4437;
+}
+
+@media (max-width: 768px) {
+  .scound_head {
+    height: 120px;
+  }
+  .scound_head .content h1 {
+    font-size: 30px;
+  }
+  .scound_head .content p {
+    gap: 20px;
+  }
+  .scound_head .content p a,
+.scound_head .content p span {
+    font-size: 18px;
+  }
+  .scound_head .content p a::after {
+    right: -12px;
+  }
+  .login_form {
+    padding: 30px 10px;
+  }
+  .login_form form h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .login_form form .input_form {
+    margin-bottom: 10px;
+  }
+  .login_form form .input_form label {
+    font-size: 15px;
+  }
+  .login_form form .input_form input {
+    padding: 4px;
+  }
+  .login_form form .btn_form {
+    padding: 7px;
+    font-size: 15px;
+  }
+  .login_form form span {
+    margin: 20px 0;
+  }
+  .login_form form span::after {
+    padding: 0;
+  }
+  .login_form form .btn_facebook,
+.login_form form .btn_google {
+    padding: 7px;
+    font-size: 15px;
+  }
+  .login_form form .btn_facebook i,
+.login_form form .btn_google i {
+    font-size: 15px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1329,6 +1542,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ul {

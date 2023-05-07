@@ -5,6 +5,7 @@
 @use "../components/how-get-job";
 @use "../components/our-blog";
 @use "../components/footer";
+@use "../pages/login";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
@@ -21,6 +22,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ul {

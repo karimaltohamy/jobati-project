@@ -27,6 +27,11 @@ header {
         font-weight: 500;
         font-size: 17px;
         color: #2f2f2f;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $main-color !important;
+        }
       }
     }
 
@@ -47,7 +52,8 @@ header {
         align-items: center;
         gap: 15px;
 
-        button {
+        button,
+        a {
           padding: 8px 20px;
           border: 8px;
           font-weight: 500;
@@ -60,7 +66,7 @@ header {
 
           &.btn_main {
             background-color: $main-color;
-            color: white;
+            color: white !important;
           }
 
           &.icon_menu {
@@ -97,7 +103,8 @@ header {
         }
 
         .btns {
-          button {
+          button,
+          a {
             padding: 4px 10px;
             span {
               display: none;
