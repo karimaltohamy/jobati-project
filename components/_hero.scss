@@ -90,6 +90,10 @@ $dark-text: #17171d;
               font-weight: 400;
               color: gray;
               margin-bottom: 5px;
+
+              svg {
+                display: none;
+              }
             }
 
             .select {
@@ -329,12 +333,12 @@ $dark-text: #17171d;
             }
 
             p {
-              font-size: 14px;
+              font-size: 13px;
             }
           }
 
           .title {
-            font-size: 35px;
+            font-size: 30px;
             margin-bottom: 0;
           }
 
@@ -347,24 +351,41 @@ $dark-text: #17171d;
             flex-direction: column;
             text-align: left;
             margin-top: 10px;
-            gap: 10px;
+            gap: 15px;
 
             .input_item {
               width: 100%;
 
               label {
                 font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                svg {
+                  display: block;
+                  width: 18px;
+                }
               }
 
               .select {
+                padding: 4px 8px;
+                border-radius: 5px;
+                border: 1px solid rgb(214, 214, 214);
+
                 select {
                   font-size: 14px;
+                  width: 100%;
                 }
               }
 
               .input {
+                padding: 4px 8px;
+                border-radius: 5px;
+                border: 1px solid rgb(214, 214, 214);
                 input {
                   font-size: 14px;
+                  width: 100%;
                 }
 
                 i {

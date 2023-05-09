@@ -290,6 +290,9 @@ header .container .header_info .btns a.icon_menu i {
   color: gray;
   margin-bottom: 5px;
 }
+.hero_section .container .line .left .form_search .input_item label svg {
+  display: none;
+}
 .hero_section .container .line .left .form_search .input_item .select select {
   border: none;
   outline: none;
@@ -505,10 +508,10 @@ header .container .header_info .btns a.icon_menu i {
     font-size: 13px;
   }
   .hero_section .container .line .left .hero_title_sm p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .hero_section .container .line .left .title {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 0;
   }
   .hero_section .container .line .left .desc {
@@ -522,19 +525,42 @@ header .container .header_info .btns a.icon_menu i {
             flex-direction: column;
     text-align: left;
     margin-top: 10px;
-    gap: 10px;
+    gap: 15px;
   }
   .hero_section .container .line .left .form_search .input_item {
     width: 100%;
   }
   .hero_section .container .line .left .form_search .input_item label {
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+  .hero_section .container .line .left .form_search .input_item label svg {
+    display: block;
+    width: 18px;
+  }
+  .hero_section .container .line .left .form_search .input_item .select {
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(214, 214, 214);
   }
   .hero_section .container .line .left .form_search .input_item .select select {
     font-size: 14px;
+    width: 100%;
+  }
+  .hero_section .container .line .left .form_search .input_item .input {
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(214, 214, 214);
   }
   .hero_section .container .line .left .form_search .input_item .input input {
     font-size: 14px;
+    width: 100%;
   }
   .hero_section .container .line .left .form_search .input_item .input i {
     font-size: 15px;
